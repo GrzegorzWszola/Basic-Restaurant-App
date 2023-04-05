@@ -1,0 +1,65 @@
+.rst-app__home{
+    background-image: url('../../assets/home.jpg');
+    background-size: 140%;
+    background-position:  center;
+    background-repeat:no-repeat;
+    background-color: rgba(0, 0, 0, 0.411);
+    background-blend-mode: multiply;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.rst-app__home-txt h2{
+    color: var(--color-2);
+    font-size: 5rem;
+}
+
+.rst-app__home-txt h1{
+    color: var(--color-1);
+    font-size: 12rem;
+    line-height: 11rem;
+    letter-spacing: 5px;
+    
+}
+
+@media screen and (max-width: 1250px) {
+    .rst-app__home-txt h1{
+        font-size: 8rem;
+        line-height: 8rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .rst-app__home {
+        background-size: 250%;
+    }   
+}
+
+@media screen and (max-width: 800px) {
+    .rst-app__home-txt h1{
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
+    .rst-app__home-txt h2{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .rst-app__home {
+        background-size: 500%;
+    } 
+
+    .rst-app__home-txt h1{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .rst-app__home-txt h2{
+        font-size: 1.5rem;
+    }
+}
+

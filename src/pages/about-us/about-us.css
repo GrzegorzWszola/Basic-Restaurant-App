@@ -1,0 +1,80 @@
+.rst-app__aboutus{
+    background-image: url('../../assets/aboutus.jpg');
+    background-color: rgba(0, 0, 0, 0.477);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rst-app__aboutus-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rst-app__aboutus h1{
+    color: var(--color-2);
+    font-size: 5rem;
+    text-shadow: 0px 3px 6px rgba(66, 68, 90, 1);
+    margin-bottom: 2rem;
+}
+
+.rst-app__aboutus p{
+    color: var(--color-1);
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1400px) {
+    .rst-app__aboutus h1{
+        font-size: 3rem;
+    }
+
+    .rst-app__aboutus p{
+        font-size: 1.2rem;
+    }
+
+    .rst-app__aboutus{
+        background-size: 300%;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .rst-app__aboutus{
+        background-size: 350%;
+    }
+
+    .rst-app__aboutus h1{
+        font-size: 2rem;
+    }
+
+    .rst-app__aboutus p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .rst-app__aboutus p{
+        font-size: .8rem;
+    }
+
+    .rst-app__aboutus{
+        background-size: 500%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .rst-app__aboutus p{
+        font-size: .5;
+    }
+
+    .rst-app__aboutus p {
+        margin-top: -2rem;
+    }
+}

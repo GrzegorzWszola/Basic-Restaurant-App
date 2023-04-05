@@ -1,0 +1,87 @@
+.rst-app__navbar{
+    background-color: var(--color-3-fade);
+    border-radius: 150px;
+}
+
+.rst-app__navbar nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 1500px;
+}
+
+.rst-app__navbar nav h1{
+    font-size: 3.5rem;
+    color: var(--color-2);
+    font-weight: 700;
+}
+
+.rst-app__navbar-link {
+    color: var(--color-1);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.rst-app__navbar-link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-2);
+    transform: scaleX(0);   
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+}
+
+.rst-app__navbar-link:hover::before{
+    transform: scaleX(1);
+}
+
+.rst-app__navbar-link:hover{
+    color: var(--color-2);
+
+}
+
+.active {
+    color: var(--color-2);
+}
+
+
+@media screen and (max-width: 1500px) {
+    .rst-app__navbar nav{
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .rst-app__navbar nav{
+        width: 630px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .rst-app__navbar nav{
+        width: 300px;
+    }
+
+    .rst-app__navbar nav h1{
+        font-size: 2rem;
+    }
+
+    .rst-app__navbar-link {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .rst-app__navbar nav{
+        width: 250px;
+    }
+}
